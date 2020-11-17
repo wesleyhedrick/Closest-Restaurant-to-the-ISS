@@ -1,0 +1,82 @@
+* {
+  font-family: "Oswald", sans-serif;
+}
+button {
+  background: #ff7f50;
+  width: 7em;
+  height: 3em;
+  border-radius: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:active {
+  background-color: #533e8e;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translateY(4px);
+}
+.container {
+  margin-left: 4em;
+  margin-bottom: 16em;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: #edab89;
+  font-size: 4em;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p {
+  color: wheat;
+  font-size: 2em;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-color: rgb(90, 43, 90); /* indigo */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.landingPageDkTp {
+  width: 99vw;
+  height: 99vh;
+  /* display: inline-block; */
+  font-size: 0;
+  position: relative;
+  border-radius: 26px solid black;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0;
+  background: url("./dinning-pictures/landingpage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    align-items: center;
+  }
+  .container {
+    margin-left: 0;
+
+    /* display: flex; */
+    align-items: center;
+  }
+}
