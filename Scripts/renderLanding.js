@@ -1,4 +1,5 @@
 import {createElement} from './helper.js'
+import {renderNav} from './renderNav.js'
 
 export function renderLanding(){
     let body = document.querySelector('body');
@@ -6,6 +7,8 @@ export function renderLanding(){
     let h1 = createElement('h1');
     let button = createElement('button');
     let p = createElement('p');
+    let nav = renderNav("Bio")
+
     h1.innerText = 'Dine with ISS'
     p.innerText = 'Search The Nearest Restaurant To The ISS';
     button.innerText = 'Search';
@@ -13,7 +16,9 @@ export function renderLanding(){
     container.append(h1);
     container.append(p);
     container.append(button);
+    container.append(nav)
     body.append(container);
+    
 
 }
     
