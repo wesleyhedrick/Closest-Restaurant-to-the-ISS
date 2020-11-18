@@ -1,0 +1,98 @@
+* {
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    background: url("./Images/landingpage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+    height: 50%;
+    width: 50%    
+}
+
+.container {
+    margin-left: 4em;
+    margin-bottom: 16em;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #edab89;
+    font-size: 4em;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p {
+    color: wheat;
+    font-size: 2em;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button {
+    background: #ff7f50;
+    width: 7em;
+    height: 3em;
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:active {
+    background-color: #533e8e;
+    box-shadow: 0 5px rgb(102, 102, 102);
+    transform: translateY(4px);
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    background-color: rgb(90, 43, 90); /* indigo */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.results {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.restaurant-list {
+    flex: 1;
+}
+
+.mapContainer {
+    flex: 2
+}
+
+
+/* @media only screen and (max-width: 600px) {
+    body {
+        align-items: center;
+    }
+    .container {
+        margin-left: 0;
+        align-items: center;
+    }
+} */

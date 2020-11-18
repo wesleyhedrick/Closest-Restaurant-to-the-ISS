@@ -17,18 +17,18 @@ export const loader = new google.maps.plugins.loader.Loader({
 export function initMap(a,b){
     console.log(a,b)
     // function initMap() {
-    // const iss = new google.maps.LatLng(34.907530, -82.250020);
-    const iss = new google.maps.LatLng(a, b);
+    // const issCoordinates = new google.maps.LatLng(34.907530, -82.250020);
+    const issCoordinates = new google.maps.LatLng(a, b);
     infowindow = new google.maps.InfoWindow();
     map = new google.maps.Map(document.getElementById('map'), {
-        center: iss,
+        center: issCoordinates,
         zoom: zoom,
     });
 
     service = new google.maps.places.PlacesService(map);
 
     service.nearbySearch({
-        location : iss,
+        location : issCoordinates,
         radius : 10000,
         type : [ 'restaurant' ]
     }, callback);    
