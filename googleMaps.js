@@ -29,7 +29,7 @@ export function initMap(a,b){
 
     service.nearbySearch({
         location : issCoordinates,
-        radius : 10000,
+        radius : 48280,
         type : [ 'restaurant' ]
     }, callback);    
 
