@@ -1,5 +1,6 @@
 * {
     font-family: "Oswald", sans-serif;
+    box-sizing: border-box; 
 }
 
 body {
@@ -14,12 +15,7 @@ body {
     background-size: cover;
 }
 
-/* Always set the map height explicitly to define the size of the div
-* element that contains the map. */
-#map {
-    height: 50%;
-    width: 50%    
-}
+
 
 .container {
     margin-left: 4em;
@@ -71,16 +67,32 @@ button:hover {
 }
 
 .results {
-    width: 100%;
+    width: 80%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1em;
+    background: linear-gradient(to bottom, black, transparent);
 }
 
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+
+#map {
+    order: 1;
+    width: 80%;
+    height: 25em;
+} 
+
 .restaurant-list {
-    flex: 1;
+    border: 1px solid black;
+    margin-right: 1em;
+    background: white;
+    order: 2;
+    width: 50%;
 }
+
 
 .mapContainer {
     flex: 2
