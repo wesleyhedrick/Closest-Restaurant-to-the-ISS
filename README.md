@@ -1,5 +1,5 @@
 
-<img src="https://github.com/wesleyhedrick/Dining-With-The-ISS/blob/master/Images/readme.jpg" width="900" height="300" alt="Header picture" />
+<img src="https://github.com/wesleyhedrick/Dining-With-The-ISS/blob/master/Images/readme.jpg" width="900" height="200" alt="Header picture" />
 
 
 # DINING WITH ISS
