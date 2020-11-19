@@ -1,11 +1,12 @@
 import db from './db.js'
 import c from './cred.js'
+// import {getSummaryData} from './Scripts/getSummaryData.js'
 
 let map;
 let service;
 let infowindow;
 
-const zoom = 12;
+const zoom = 8;
 
 export const loader = new google.maps.plugins.loader.Loader({
     apiKey: c, 
@@ -13,6 +14,7 @@ export const loader = new google.maps.plugins.loader.Loader({
     libraries: ['places']
 });
 
+// getSummaryData(lat, long, )
 
 export function initMap(a,b){
     console.log(a,b)
@@ -25,11 +27,32 @@ export function initMap(a,b){
         zoom: zoom,
     });
 
+    
+    let issIcon = new google.maps.MarkerImage('./Images/iss.png',
+        null,
+         // The origin for my image is 0,0.
+         new google.maps.Point(0, 0),
+         // The center of the image is 50,50 (my image is a circle with 100,100)
+         new google.maps.Point(50, 50),
+         new google.maps.Size(50, 50),
+                  
+          // scaled size
+    )
+
+    let issLocation = new google.maps.LatLng(a,b);
+    new google.maps.Marker({
+        position: issLocation,
+        map: map,
+        optimized: false,
+        icon: issIcon
+    })
+
+
     service = new google.maps.places.PlacesService(map);
 
     service.nearbySearch({
         location : issCoordinates,
-        radius : 48280,
+        radius : 260934,
         type : [ 'restaurant' ]
     }, callback);    
 
@@ -37,6 +60,7 @@ export function initMap(a,b){
         if (status === google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < 3; i++) {
                 createMarker(results[i]);
+                console.log(results[i])
             }
         }
     }
@@ -52,6 +76,6 @@ export function initMap(a,b){
             infowindow.open(map, marker);
         });
     }
-
+    
     return map;
 }

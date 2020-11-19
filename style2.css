@@ -109,3 +109,49 @@ button:hover {
     }
 } */
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper > * {
+    margin: 0;
+}
+.h1-bio-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.bio-container-body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3em;
+}
+span {
+    font-size: 30px;
+    color: #edab89;
+}
+
+img[src="./Images/iss.png"] {
+    background-color: transparent;
+ }
+
+
+
+@media only screen and (max-width: 600px) {
+    .bio-container-body {
+        flex-direction: column;
+    }
+
+}
