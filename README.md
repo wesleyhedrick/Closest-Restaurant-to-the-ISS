@@ -18,10 +18,10 @@
 
 # Contributors
 
-### Wes Hedrick
+- Wes Hedrick
 
-### Shoel Uddin
+- Shoel Uddin
 
-### David Vaughan
+- David Vaughan
 
-### Melody Ulep
+- Melody Ulep
