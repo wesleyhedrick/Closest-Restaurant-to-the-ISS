@@ -1,103 +1,100 @@
 * {
-    font-family: "Oswald", sans-serif;
-    box-sizing: border-box; 
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    background: url("./Images/landingpage.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+  background: url("./Images/landingpage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-
 .container {
-    margin-left: 4em;
-    margin-bottom: 16em;
-    display: flex;
-    flex-direction: column;
+  margin-left: 4em;
+  margin-bottom: 16em;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
-    color: #edab89;
-    font-size: 4em;
-    
-    margin-top: 0;
-    margin-bottom: 0;
+  color: #edab89;
+  font-size: 4em;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 p {
-    color: wheat;
-    font-size: 2em;
-    
-    margin-top: 0;
-    margin-bottom: 0;
+  color: wheat;
+  font-size: 2em;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 button {
-    background: #ff7f50;
-    width: 7em;
-    height: 3em;
-    border-radius: 5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: #ff7f50;
+  width: 7em;
+  height: 3em;
+  border-radius: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:active {
-    background-color: #533e8e;
-    box-shadow: 0 5px rgb(102, 102, 102);
-    transform: translateY(4px);
+  background-color: #533e8e;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translateY(4px);
 }
 
 button:focus {
-    outline: 0;
+  outline: 0;
 }
 
 button:hover {
-    background-color: rgb(90, 43, 90); /* indigo */
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+  background-color: rgb(90, 43, 90); /* indigo */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .results {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    background: linear-gradient(to bottom, black, transparent);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background: linear-gradient(to bottom, black, transparent);
 }
 
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
 
 #map {
-    order: 1;
-    width: 80%;
-    height: 25em;
-} 
+  order: 1;
+  width: 80%;
+  height: 25em;
+  margin-left: ;
+}
 
 .restaurant-list {
-    border: 1px solid black;
-    margin-right: 1em;
-    background: white;
-    order: 2;
-    width: 50%;
+  border: 1px solid black;
+  margin-right: 1em;
+  background: white;
+  order: 2;
+  width: 50%;
 }
-
 
 .mapContainer {
-    flex: 2
+  flex: 2;
 }
-
 
 /* @media only screen and (max-width: 600px) {
     body {
@@ -110,48 +107,46 @@ button:hover {
 } */
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
 }
 
 .wrapper > * {
-    margin: 0;
+  margin: 0;
 }
-.h1-bio-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;
+.h1-bio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
 }
 
 .bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .bio-container-body {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 3em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3em;
 }
 span {
-    font-size: 30px;
-    color: #edab89;
+  font-size: 30px;
+  color: #edab89;
 }
 
 img[src="./Images/iss.png"] {
-    background-color: transparent;
- }
-
-
+  background-color: transparent;
+}
 
 @media only screen and (max-width: 600px) {
-    .bio-container-body {
-        flex-direction: column;
-    }
-
+  .bio-container-body {
+    flex-direction: column;
+  }
 }
