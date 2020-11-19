@@ -11,6 +11,7 @@
 ## API used in this project
 
 -   Google maps
+-   ISS coordinates
 
 ## What is dining with ISS all about?
 
