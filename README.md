@@ -1,3 +1,7 @@
+
+<img src="http://....jpg" width="200" height="200" />
+
+
 # DINING WITH ISS
 
 ## Objectives:
