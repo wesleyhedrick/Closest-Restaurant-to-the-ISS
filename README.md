@@ -1,5 +1,5 @@
 
-<img src="http://....jpg" width="200" height="200" />
+<img src="readme.jpg" width="200" height="200" />
 
 
 # DINING WITH ISS
