@@ -6,8 +6,8 @@ export function renderLanding(){
     let body = document.querySelector('body');
     body.classList.add('landing');
     body.innerHTML = '';
-    body.style.background = 'url(\'./Images/landingpage.png\')';
-    body.style.backgroundSize = 'cover'
+    // body.style.background = 'url(\'./Images/landingpage.png\')';
+    // body.style.backgroundSize = 'cover'
     let container = createElement('div','container');
     let h1 = createElement('h1');
     let renderMap = createElement('button', 'render-map');

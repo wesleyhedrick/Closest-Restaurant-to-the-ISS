@@ -15,13 +15,14 @@
     background-size: cover;
   }
   
+
   .mapAndBioBody {
       width: 100vw;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 0px;
-      background-size: cover;
       padding-top: 1em;
       padding-bottom: 1em;
       background: url("./Images/landingpage.png");
@@ -115,6 +116,7 @@
     background: white;
     order: 2;
     width: 50%;
+    font-weight: bold;
   }
   
   .mapContainer {
@@ -165,11 +167,34 @@
   }
 
   
-  /* @media only screen and (max-width: 600px) {
-      .bio-container-body {
-          flex-direction: column;
+  @media only screen and (max-width: 600px) {
+      .landing {
+          padding: 1em;
+
       }
-  } */
+      .container {
+        margin-left: 0em;
+        margin-bottom: 0em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .h1 {
+        color: #edab89;
+        font-size: 4em;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+      }
+
+      p {
+        color: wheat;
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+      }
+  }
   
   /* @media only screen and (max-width: 600px) {
       body {

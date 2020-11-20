@@ -6,10 +6,10 @@ import {renderLanding} from './renderLanding.js'
 
 export function renderBio(){
     let body = document.querySelector("body"); 
+    body.innerHTML = '';
     body.classList.add('mapAndBioBody');
     body.classList.remove('landing')
     body.style.background = 'url(\'./Images/team-bg@2x.png\')';
-    body.innerHTML = '';
     let wrapper = createElement("div", "wrapper");
     let h1Container = createElement('div', 'h1-bio-container');
     let bioContainer = createElement('div', 'bio-container-body');
