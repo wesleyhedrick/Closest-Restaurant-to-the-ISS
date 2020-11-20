@@ -47,7 +47,6 @@ export function initMap(a,b){
         icon: issIcon
     })
 
-
     service = new google.maps.places.PlacesService(map);
 
     service.nearbySearch({
