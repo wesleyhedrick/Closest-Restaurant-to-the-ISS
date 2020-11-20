@@ -107,7 +107,8 @@
     order: 1;
     width: 80%;
     height: 25em;
-    margin-left: ;
+    border-radius: 1em;
+    margin-bottom: 1em;
   }
   
   .restaurant-list {
@@ -117,6 +118,7 @@
     order: 2;
     width: 50%;
     font-weight: bold;
+    padding: 1em;
   }
   
   .mapContainer {
