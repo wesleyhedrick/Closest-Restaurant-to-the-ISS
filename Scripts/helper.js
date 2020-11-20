@@ -16,7 +16,7 @@ function createBio(nameInput, text, container, src) {
     let bio = createElement("div", "bio");
     let img = createElement ("img")
     let name = createElement("div", "member-name")
-    let bioText = createElement("p")
+    let bioText = createElement("p", 'bioP')
     
     img.src = src;
     name.innerText = nameInput;
