@@ -12,7 +12,7 @@ function createElement(element, clss, id){
     return el
 }
 
-function createBio(nameInput, text, container, src) {
+function createBio(nameInput, text, container, src, clss) {
     let bio = createElement("div", "bio");
     let img = createElement ("img")
     let name = createElement("div", "member-name")
