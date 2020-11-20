@@ -149,6 +149,10 @@
     width: 10em;
     margin: 1em;
   }
+
+  .bio>img {
+      width: 100%;
+  }
   .bio-container-body {
       display: flex;
       justify-content: space-evenly;

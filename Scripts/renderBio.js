@@ -15,17 +15,21 @@ export function renderBio(){
     let bioContainer = createElement('div', 'bio-container-body');
     let h1 = createElement("h1");
     let bio = createElement("div","bio-individual")
-    let src = "./Images/desktop-astro.png"
+    let wesImgSrc = "./Images/wesHImg.jpeg"
+    let davidImgSrc = "./Images/davidVImg.jpeg"
+    let melodyImgSrc = "./Images/melodyUImg.jpeg"
+    let shoelImgSrc = "./Images/shoelUImg.jpeg"
+
     let nav = renderNav(['Home'],['navigate-home'])
     let shoelBioText = 'Hello, I’m Shoel. Army Veteran (EOD tech), husband and father, and future software developer.'
     let wesBioText = 'My name is Wes. I like to ride my motorcycle, be good to my cat, read a ton, solve problems with code, and use the Oxford comma.'
     let melodyBioText = 'Aloha, I’m Melody. I like surfing, designing, and learning how to code.'
     let davidBioText = 'Hey! I’m David, and I’m an aspiring Software Developer during the day, but at night, I’m an ancient history lover and a huge movie buff.'
     
-    let shoel = createBio("Shoel Uddin", shoelBioText, bioContainer, src )
-    let wes = createBio("Wes Hedrick", wesBioText, bioContainer, src )
-    let melody = createBio("Melody Ulep", melodyBioText, bioContainer, src )
-    let david = createBio("David Vaughan", davidBioText, bioContainer, src ) 
+    let shoel = createBio("Shoel Uddin", shoelBioText, bioContainer, shoelImgSrc)
+    let wes = createBio("Wes Hedrick", wesBioText, bioContainer, wesImgSrc )
+    let melody = createBio("Melody Ulep", melodyBioText, bioContainer, melodyImgSrc )
+    let david = createBio("David Vaughan", davidBioText, bioContainer, davidImgSrc ) 
 
     h1.classList.add('h1-bio');
     h1.innerText = 'Creators';
