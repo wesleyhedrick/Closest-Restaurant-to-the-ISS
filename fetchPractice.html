@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let url = 'http://api.open-notify.org/iss-now.json';
+
+    fetch(url).then(a => a.json()).then(a=>console.log(a.iss_position.latitude, a.iss_position.longitude));
+</script>
+</body>
+</html>
