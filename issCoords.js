@@ -3,7 +3,7 @@ import ajax from "./ajax.js";
 const issCoordsLoadedEvent = new Event('issloaded');
 
 export const getISSCoords = () => {
-    ajax("http://api.open-notify.org/iss-now.json", (res) => {
+    ajax("https://api.open-notify.org/iss-now.json", (res) => {
         let r = JSON.parse(res);
         db.push(r.iss_position.latitude)
         db.push(r.iss_position.longitude)  
